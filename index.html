@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="paper">
+        <div>
+            <header>
+                <h1>THE QUIZ APP</h1>
+                <P>Multiple Choice Questions</P>
+            </header>
+        </div>
+        <section>
+            <form name="quizform" onsubmit="return submitAnswers()">
+                <div>
+                    <h3>Q.1 In what HTML element, we write JavaScript Code ?</h3>
+                    <input type="radio" name="q1" value="a" id="q1a"> 1 .&lt;script&gt;<br>
+                    <input type="radio" name="q1" value="b" id="q1b"> 2 .&lt;code&gt;<br>
+                    <input type="radio" name="q1" value="c" id="q1c"> 3 .&lt;js&gt;<br>
+                    <input type="radio" name="q1" value="d" id="q1d"> 4 .&lt;link&gt;<br>
+                </div>
+                <div>
+                    <h3>Q.2 Which HTML element is used to make tables ?</h3>
+                    <input type="radio" name="q2" value="a" id="q2a"> 1 .&lt;table&gt;<br>
+                    <input type="radio" name="q2" value="b" id="q2b"> 2 .&lt;cell&gt;<br>
+                    <input type="radio" name="q2" value="c" id="q2c"> 3 .&lt;row&gt;<br>
+                    <input type="radio" name="q2" value="d" id="q2d"> 4 .&lt;format&gt;<br>
+                </div>
+                <div>
+                    <h3>Q.3 Which attribute is used for giving link to other HTML document ?</h3>
+                    <input type="radio" name="q3" value="a" id="q3a"> 1 .&lt;link&gt;<br>
+                    <input type="radio" name="q3" value="b" id="q3b"> 2 .&lt;a&gt;<br>
+                    <input type="radio" name="q3" value="c" id="q3c"> 3 .&lt;href&gt;<br>
+                    <input type="radio" name="q3" value="d" id="q3d"> 4 .&lt;reference&gt;<br>
+                </div>
+                <div>
+                    <h3>Q.4 Which query selector is used to select id in css ?</h3>
+                    <input type="radio" name="q4" value="a" id="q4a"> 1 . id<br>
+                    <input type="radio" name="q4" value="b" id="q4b"> 2 . .<br>
+                    <input type="radio" name="q4" value="c" id="q4c"> 3 . #<br>
+                    <input type="radio" name="q4" value="d" id="q4d"> 4 . ;<br>
+                </div>
+                <div>
+                    <input type="submit" value="submit">
+                </div><br><br>
+                <div id="scored"> </div>
+            </form>
+        </section>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+body {
+    background-image: url("./img/pen.jpg");
+    background-color: white;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    color: grey;
+}
+
+header {
+    text-align: center;
+    border-bottom: grey dashed 1px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    font-weight: bold;
+    color: rgb(231, 176, 74);
+}
+
+header p {
+    margin-top: 5px;
+    color: #000;
+    padding: 0;
+    font-size: x-large;
+    font-style: italic;
+}
+
+section {
+    min-height: 400px;
+}
+
+.paper {
+    width: 60%;
+    margin: 25px auto;
+    padding: 25px;
+    background: rgb(248, 248, 248);
+    position: relative;
+}
+
+.paper,
+.paper::before,
+.paper::after {
+    box-shadow: 0px 10px 10px 10px grey;
+    border: 2px solid #bbb;
+}
+
+.paper::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+}
+
+.paper::after {
+    right: -5px;
+    top: 5px;
+    transform: rotate(1deg);
+    z-index: -2;
+}
+
+.paper::before,
+.paper::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: white;
+}
+
+input[type="submit"] {
+    margin: 5px;
+    margin-left: 50%;
+    box-shadow: 0px 10px 14px -7px rgb(83, 196, 83);
+    background: green;
+    border: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
